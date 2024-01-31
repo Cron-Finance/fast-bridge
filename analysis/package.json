@@ -1,0 +1,22 @@
+{
+  "name": "twamm-liquidity-network-simulator",
+  "version": "1.0.0",
+  "description": "Simulations of a TWAMM Liquidity Network, Varying in Resolution",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "simulate": "npm run build && node ./dist/simulation",
+    "calculate": "npm run build && node ./dist/abstraction"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.1.2"
+  }
+}
