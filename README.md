@@ -77,6 +77,8 @@ https://github.com/Cron-Finance/streaming-bridge/assets/99218061/8bc2bf19-4842-4
 
 Various bridge designs have been used to transmit assets quickly (< 7 days) between chains. However, these designs suffer from hacks (see [Poly](https://rekt.news/polynetwork-rekt/), [BNB](https://rekt.news/bnb-bridge-rekt/) & [Wormhole](https://rekt.news/wormhole-rekt/)), throughput and extensibility limitations (see [Circle $1M limit](https://etherscan.io/tx/0x08b635c88808ad8f125a66e8f399da64c91b5d06fb05b992d5357393a2d66b49#eventlog)), or lack of liquidity + high slippage to service users moving in size.
 
+![bridge_time.png](https://github.com/Cron-Finance/fast-bridge/blob/main/assets/Bridge%20Time.png)
+
 There is a new market of intent & relayer/solver-based solutions that leverage off-chain liquidity sources. Although these solutions can quickly fill small and medium-sized orders for blue chip tokens, they are unable to support large orders, new L2s, or low liquidity tokens. Additionally, the UX for these solutions has low to no visibility on order status and opaque pricing.
 
 || Bridging Token | Representative, Minting | Stablecoin | Intent |
