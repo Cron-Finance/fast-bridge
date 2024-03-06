@@ -35,7 +35,7 @@ Current bridging solutions force users to make tradeoffs between *centralized vs
 
 Our goal was to decrease complexity, increase transparency, and facilitate efficient transfers with minimal slippage in a low liquidity environment between any EVM-compatible L1/L2 <> L1/L2 chains. The animation below illustrates the seamless experience of bridging USDC from Arbitrum to Optimism.
 
-https://github.com/Cron-Finance/streaming-bridge/assets/99218061/f8370017-9d3d-40d1-9717-6fb631baa370
+https://github.com/Cron-Finance/fast-bridge/assets/99218061/b90a7cbd-7318-45b0-b30c-01f0a05dc77c
 
 ### Highlights
 - ***100% On-Chain & Composable***: the entire protocol lives on-chain and is composable with other protocols interested in bridging assets, arbitraging, or providing liquidity to earn fees. We have designed the interface to be extremely simple, think Uniswap V2/V3, so the learning curve is minimal.
@@ -57,21 +57,21 @@ The below animations break down the advantages of our design for the different p
     - Full control to pause, cancel, withdraw, and transparent execution -- no black boxes
     - Transfer in size with minimal slippage, time delays, gas, or MEV extraction
 
-https://github.com/Cron-Finance/streaming-bridge/assets/99218061/b1768a25-4914-4111-afde-a32b10104769
+https://github.com/Cron-Finance/fast-bridge/assets/99218061/0ca1f234-171f-4874-b2fe-4572d10f4cc0
 
 #### Liquidity Provider
     - Use native assets (USDC), not 3rd party wrapped illiquid tokens (ex. hopUSDC, USDC_L0, etc)
     - Low TVL needed for execution, so less risk and a higher share of swap fees
     - Dynamic & differential fees to meet demand surges
 
-https://github.com/Cron-Finance/streaming-bridge/assets/99218061/6c19491e-c9bd-4273-8168-162eb17643d5
+https://github.com/Cron-Finance/fast-bridge/assets/99218061/8c6090fd-d9d3-4e31-b610-7ce13f0fa747
 
 #### Arbitrageur/Retail (Atomic)
     - No need to source arbitrary tokens to correct pool prices
     - Easy to arbitrage, simply back-run long-term trade for profit by going in the opposite direction
     - PFoF fee structure for dedicated parties
 
-https://github.com/Cron-Finance/streaming-bridge/assets/99218061/8bc2bf19-4842-4d5b-8ad2-e6898971bfeb
+https://github.com/Cron-Finance/fast-bridge/assets/99218061/8cc1fc3c-f661-4d3a-8d6d-15c1bb2e4e2e
 
 ### Competition
 
@@ -173,7 +173,7 @@ Building mitigations `in-protocol` has the drawback of adding latency, complexit
 
 EigenLayer's Active Validation Service (AVS) gives us the most flexibility and control in the design space i.e. L2 support, latency, economic security, validator size, or slashing criteria. LPs can choose between `max short-term trade cap size` to `1/2 of the liquidity pool size` in economic security to give them the economic security for taking on the risk of near-instant execution of bridging value. Additionally, tools like [Hyperlane's ISM](https://twitter.com/Hyperlane_xyz/status/1733220047336944090) (interchain security model) have built-in support to leverage EigenLayer AVS for validating cross-chain messages.
 
-https://github.com/Cron-Finance/streaming-bridge/assets/99218061/aef1e770-a663-47ef-b15a-00dfc00aacab
+https://github.com/Cron-Finance/fast-bridge/assets/99218061/632bf802-dbdd-423c-ac72-44280af80c6b
 
 #### *ZK-Proofs: Trustless Security*
 
