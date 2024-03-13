@@ -14,8 +14,6 @@ All these potential routes involve a vast amount of ***operational complexity***
 <img width="1085" alt="image" src="https://github.com/Cron-Finance/fast-bridge/assets/99218061/56eabb40-31f7-4843-b9b4-243ee1c71b8c">
 *Source: DefiLlama CEX Transparency (Binance)*
 
-Source: DefiLlama CEX Transparency (Binance)
-
 Alternatively, bridging offers its own set of risk tradeoffs i.e. finality, re-org, bridge, validation, and time delays to name a few. Therefore, exchanges end up paying high fees for external liquidity instead of relying on nascent and slow bridging solutions.
 
 ## Solution
